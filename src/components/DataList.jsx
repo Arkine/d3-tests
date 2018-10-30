@@ -2,7 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
-	border: 1px solid blue;
+	flex-grow: 1;
+
+	background-color: #eee;
 `;
 
 const List = styled.ul`
