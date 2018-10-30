@@ -7,6 +7,7 @@ import Sidebar from '../components/Sidebar';
 import Logo from '../components/header/Logo';
 // import UnorderedList from '../components/common/UnorderedList';
 import PrimaryNavigation from '../components/navigation/Primary';
+import World from '../components/World';
 
 const Container = styled.div`
 	display: flex;
@@ -35,7 +36,9 @@ export default class Home extends React.Component {
 					</Sidebar>
 				</Column>
 				<Column width='80%'>
-					<Stage />
+					<Stage>
+						<World />
+					</Stage>
 					<DataList />
 				</Column>
 			</Container>
