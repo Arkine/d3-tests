@@ -25,6 +25,11 @@ const Column = styled.div`
 	width: ${props => props.width ? props.width : '100%'};
 `;
 
+/**
+ * Sample data here: https://www.percona.com/blog/2011/02/01/sample-datasets-for-benchmarking-and-testing/
+ * and here: https://catalog.data.gov/dataset?res_format=JSON
+ */
+
 export default class Home extends React.Component {
 	render() {
 		return (

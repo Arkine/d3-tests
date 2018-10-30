@@ -5,13 +5,13 @@ import Loading from './Loading';
 
 import worlddata from '../data/world';
 
-export default class World extends React.Component {
+export default class World extends React.PureComponent {
 
 	render(){
 		const height = 500;
 		const width = 860;
 
-		const projection = geoEquirectangular().fitSize([860, 500],  worlddata);
+		const projection = geoEquirectangular().fitSize([width, height],  worlddata);
 		const pathGenerator = geoPath().projection(projection);
 
 		const countries = worlddata.features.map((d, i) => {
